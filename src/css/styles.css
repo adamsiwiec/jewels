@@ -1,0 +1,407 @@
+body {
+  background: #111111;
+  color: #f5f5f5;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #f5f5f5;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+  font-family: "Glacial Indifference", -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+p {
+  font-weight: 200;
+}
+
+.head {
+  font-size: 7rem;
+  font-weight: 700;
+}
+
+.subhead {
+  text-align: center;
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#hero .container {
+  text-align: center;
+  max-width: 500px;
+}
+
+#hero h3 {
+  font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+}
+
+#nav {
+  position: absolute;
+  z-index: 999;
+
+  /*display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  text-align: center;*/
+}
+
+#nav a {
+  font-family: "Inconsolata", monospace;
+  color: #a8a8a8;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+#nav a:hover {
+  color: #6e6d6d;
+}
+
+.algolia-autocomplete {
+  padding: 1rem 3rem;
+}
+
+
+
+.cta {
+  padding: 1.5rem 5rem;
+  background: #007EFF;
+  border: 3px solid #007EFF;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #f5f5f5;
+  transition: all 0.2s ease;
+}
+
+.cta:hover {
+  background: transparent;
+  color: #007EFF;
+}
+
+#logo {
+  height: 120px;
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  #hero h1 {
+    font-size: 4rem;
+  }
+
+  #hero h3 {
+    font-size: 3rem;
+  }
+
+  #logo {
+    height: 100px;
+  }
+
+  #nav {
+    font-size: 1.3rem;
+  }
+
+  .nav-item {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #search {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .algolia-autocomplete {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  #hero {
+    align-items: flex-start;
+  }
+
+  #hero .container {
+    margin-top: 10rem;
+  }
+}
+
+/* Features */
+#features {
+  margin-bottom: 5rem;
+}
+
+#features p {
+  font-size: 2rem;
+}
+
+/* Code Styles */
+pre code {
+  background: #1e1e1e;
+  font-family: "Inconsolata", monospace;
+  position: relative;
+  border: none;
+}
+
+pre code::after {
+  content: attr(lang);
+  font-size: 1.5rem;
+  color: #BFBFBF;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+code {
+  font-family: "Inconsolata", monospace;
+}
+
+.string {
+  color: #02C1A7;
+}
+.special {
+  color: #AC2EC5;
+}
+.global {
+  color: #faaa24;
+}
+.method {
+  color: #07b7d6;
+}
+.comment {
+  color: #989898;
+}
+
+/* Example Styles */
+
+#example #code pre:first-of-type {
+  margin-bottom: 1rem;
+}
+
+#example #code pre {
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #1e1e1e;
+  border-radius: 3px;
+  text-align: center;
+  height: 100%;
+}
+
+#app input[type=text] {
+  background: #252525;
+  color: #f5f5f5;
+  width: 250px;
+}
+
+#app h1 {
+  font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  margin: 1rem;
+}
+
+/* === Footer === */
+footer {
+	margin: 5rem;
+}
+
+#footer-content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#footer-name, #footer-madeby {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 2.5rem;
+}
+
+#footer-name {
+	font-family: "Gilroy-Bold", sans-serif;
+}
+
+#footer-desc {
+	margin-left: 1rem;
+	font-family: "Gilroy-Light", sans-serif;
+}
+
+#footer-logo {
+	height: 75px;
+	width: 75px;
+  border: none;
+	border-radius: 10px;
+	margin-bottom: 0;
+}
+
+#footer-link {
+	color: #f5f5f5;
+	text-decoration: none;
+}
+
+
+.image {
+    transition: all 0.2s ease;
+    margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 300px;
+  height: 300px;
+}
+
+@media only screen and (max-width : 500px) {
+
+.image {
+    transition: all 0.2s ease;
+    margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 200px;
+  height: 200px;
+}
+}
+
+.svg {
+  height:300px;
+     stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: dash 3s linear forwards;
+  stroke-miterlimit:10;
+  stroke-width: 10px;
+  stroke: #ffffff;
+  fill: none;
+}
+
+@keyframes dash {
+
+    to {
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+
+
+    }
+
+
+}
+
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    }
+    @keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+    }
+    @-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+    }
+    @-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+    }
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.mfp-close {
+  visibility: hidden;
+}
+
+a, img, div {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.gray {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  /* Firefox 3.5+, IE10 */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+ & Safari 6+ */
+  -webkit-transition: all .6s ease;
+  /* Fade to color for Chrome and Safari */
+  -webkit-backface-visibility: hidden;
+  /* Fix for transition flickering */
+}
+
+.gray:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#part {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+ /* background-color: #b61924;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;*/
+}
+
+
+
+
+
+
+

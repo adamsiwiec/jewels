@@ -1,0 +1,15 @@
+{
+  "name": "jewels",
+  "description": "jewels",
+  "runtime": "nodejs6.10",
+  "timeout": 20,
+  "profile": "default",
+  "memory": 128,
+  "region": "us-east-1",
+
+  "role": "arn:aws:iam::823387765616:role/jewels_lambda_function",
+  "environment": {},
+  "hooks": {
+      "build": "../../node_modules/.bin/webpack -p --config ../../deploy.config.js"
+  }
+}

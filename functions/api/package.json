@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "node-instagram": "^3.0.0",
+    "request": "^2.81.0"
+  }
+}

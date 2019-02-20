@@ -1,0 +1,47 @@
+{
+  "name": "adamsiwiec",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "scripts": {
+    "start": "node index.js",
+    "pack": "webpack --optimize-minimize",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "url": "git+https://github.com/adamSiwiec/adamsiwiec.github.io.git",
+    "type": "git"
+  },
+  "author": "Adam Siwiec",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamSiwiec/adamsiwiec.github.io/issues"
+  },
+  "homepage": "https://github.com/adamSiwiec/adamsiwiec.github.io#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "font-awesome": "^4.6.3",
+    "font-awesome-loader": "^1.0.2",
+    "image-webpack-loader": "^3.6.0",
+    "imports-loader": "^0.7.0",
+    "jquery": "^3.3.1",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9"
+  },
+  "dependencies": {
+    "compression": "^1.7.3",
+    "express": "^4.16.4",
+    "favicons-webpack-plugin": "0.0.9",
+    "file-loader": "^0.11.2",
+    "json-loader": "^0.5.7",
+    "magnific-popup": "^1.1.0",
+    "node-instagram": "^3.0.0",
+    "node-sass": "^4.11.0",
+    "normalize.css": "^7.0.0",
+    "particles.js": "^2.0.0",
+    "resolve-url-loader": "^2.3.2",
+    "sass-loader": "^6.0.7",
+    "typed.js": "^2.0.10",
+    "webpack": "^3.12.0",
+    "wingcss": "^1.0.0-beta"
+  }
+}
